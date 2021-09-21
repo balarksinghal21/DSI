@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color: #E5E5E5;
+    --bg: #fff;
+    --border: .1rem solid rgba(0, 0, 0, 0.15);
+    
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 34px;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+.header{
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 3%;
+    border-bottom: var(--border);
+    position: static;
+    margin: 6px;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    height: 79px;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 18px;
+    color: #1F2E35CC;
+}
+
+.header .icons div{
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 1rem;
+}
+.btn{
+    position: static;
+    width: 97px;
+    height: 29px;
+    left: 32px;
+    top: 12px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 0.7rem;
+    color: #EE4248;
+}
+
+span{
+    color: #EE4248;
+}
+
+.section{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: 95px 130px;
+    
+}
+.section-left{
+    flex-direction: row-reverse;
+    background: #E0E0E0;
+    max-width: 100%;
+    margin: 0px;
+    padding: 15px 163px;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+
+.sectionTag{
+    padding: 16px 0px;
+}
+
+.sectionSubTag{
+    font-family: 'Roboto', sans-serif;
+}
+
+.thumbnail img{
+    width: 550px;
+    margin-top: 18px;
+}
+
+.text-big{
+    font-size: 35px;
+}
+.text-small{ 
+    font-size: 17px;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+.btn{
+    margin-left: 0px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 16px 44px;
+    height: 55px;
+    width: 190px;
+    font-size: 20px;
+    color: white;
+    background-color: #EE4248;
+}
+
+.row{ 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.small-container{
+    max-width: 100%;
+    margin: 34px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.col-4{
+    flex-basis: 24%;
+    padding: 10px;
+    min-width: 200px;
+    margin: 15px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 23%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    color: black;
+    font-weight: normal;
+}
+
+.test{
+    flex-basis: 21%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.test img{
+    width: 100%;
+}
+
+.testimonial .test{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.5s;
+    border-radius: 12px;
+}
+.testimonial .test .media .fab{
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+    padding: 7px;
+    /* margin-left: 1rem; */
+}
+.testimonial .test img{
+    width: 120px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.h-7{
+    font-size: 20px;
+    color: #EE4248;
+    display: block;
+    font-weight: bold;
+}
+
+footer{
+    background: #EE4248;
+    color: white;
+    padding: 24px;
+    font-size: 20px;
+    height: auto;
+}
+
+.center{
+    text-align: center;
+}
+
+.about{
+    color: black;
+    font-size: 14px;
+    padding: 60px 3px 20px;
+}
+.about p{
+    color: black;
+    font-size: 20px;
+}
+
+.about h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-col-1, .about-col-2, .about-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.about-col-1{
+    flex-basis: 30%;
+}
+.about-col-2{
+    flex: 1;
+    text-align: center;
+}
+.about-col-2 img{
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.about-col-3{
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.about-col-3 img{
+    width: 116px;
+    padding: 3px;
+    margin: 3px 5px;
+    margin-bottom: 7px;
+    height: 47px;
+}
+
+.about-row{ 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+}
